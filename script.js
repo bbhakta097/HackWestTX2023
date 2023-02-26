@@ -50,7 +50,7 @@ function phonestore() {
   }
 }
 
-
+/*
 const app = express();
 const apiKey = "AIzaSyBMylzHFojddOJfJo8Z2CSr9TIOIbT4kf8";
 
@@ -65,7 +65,7 @@ const client = twilio(accountSid, authToken);
 
 client.messages
   .create({
-    body: "Hello, welcome to EmTour! Send us a city you plan to visit, and we will provide you with cool tourist locations!",
+    body: "Hello, welcome to TourHub! Send us a location you plan to visit, and we will provide you with cool tourist spots nearby!",
     from: "+18339043402",
     to: "+19364467645",
   })
@@ -105,9 +105,7 @@ app.post("/sms", (req, res) => {
         "Here are some tourist locations in " + cityName + ":\n";
       touristLocations.forEach((location) => {
         messageBody += `\n${location.name}\n${location.address}\nRating: ${location.rating}`;
-        /*if (location.photoUrl) {
-          messageBody += `\n${location.photoUrl}`;
-        }*/
+        
         messageBody += "\n";
       });
 
@@ -131,3 +129,4 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });
+*/
